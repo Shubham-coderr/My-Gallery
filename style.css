@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5em;
+  margin-bottom: 0.7em;
+}
+
+.men-image {
+  width: 6em;
+  border-radius: 0.7em;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #4e5150;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about h3 {
+  font-size: 0.8rem;
+  color: #bdbdbd;
+  line-height: 2em;
+  font-family: "Montserrat", sans-serif;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7em;
+  margin: 1em;
+}
+
+.post {
+  text-align: center;
+  background: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  border-radius: 12px;
+}
+
+.followers {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  text-align: center;
+  background: #e5e5e5;
+  padding: 1em;
+}
+.following {
+  text-align: center;
+  background: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  border-radius: 12px;
+}
+
+span {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #4e5150;
+}
+p {
+  font-size: 0.9rem;
+  font-family: "Montserrat", sans-serif;
+  color: #bdbdbd;
+}
+
+.hero {
+  display: grid;
+  justify-content: center;
+  grid-template-areas: "one two two" "three three four" "five six four";
+  gap: 12px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero img {
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.photo1 {
+  grid-area: one;
+}
+
+.photo2 {
+  grid-area: two;
+}
+
+.photo3 {
+  grid-area: three;
+}
+
+.photo4 {
+  grid-area: four;
+}
+
+.photo5 {
+  grid-area: five;
+}
+
+.photo6 {
+  grid-area: six;
+}
+
+footer {
+  text-align: center;
+}
+
+@media (min-width: 750px) {
+  .hero {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .hero {
+    gap: 15px;
+  }
+  .photo1 {
+    margin-left: 0.6em;
+    margin-top: 0.5em;
+    width: 240px;
+  }
+  .photo2 {
+    width: 520px;
+    height: 244px;
+    margin-top: 0.5em;
+  }
+  .photo3 {
+    width: 515px;
+    height: 244px;
+  }
+  .photo4 {
+    height: 500px;
+    width: 255px;
+  }
+  .photo5 {
+    width: 240px;
+  }
+  .photo6 {
+    width: 240px;
+  }
+}
